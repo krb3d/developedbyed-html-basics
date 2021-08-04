@@ -1,3 +1,7 @@
+* {
+  font-size: 20px;
+}
+
 h3 {
   color: yellowgreen;
 }
@@ -8,4 +12,33 @@ h3 {
 
 #youtube-link {
   color: darkmagenta;
+}
+
+h1 {
+  color: cornflowerblue;
+}
+
+.random h1 {
+  color: hotpink;
+}
+
+section > p {
+  border: 1pt;
+  color: khaki;
+}
+
+.my-list + ul {
+  list-style-type: lower-greek;
+}
+
+.nav-links li {
+  color: fuchsia;
+}
+
+.nav-links li a {
+  color: black;
+}
+
+ul li:nth-child(2) {
+  background-color: yellow;
 }
