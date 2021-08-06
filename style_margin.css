@@ -1,0 +1,70 @@
+button.margins {
+  margin: 30px;
+  padding: 50px 30px 20px 10px;
+  background-color: crimson;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 62.5%; - see on the bottom*/
+}
+
+div {
+  background-color: olive;
+  color: yellow;
+
+  width: 100%;
+  padding: 20px;
+
+  margin-top: 20px;
+
+  border: 10px solid magenta;
+}
+
+.pixel-size {
+  font-size: 20px;
+}
+
+.pixel-size p {
+  font-size: 30px;
+}
+
+/* 
+html {
+    font-size: 16px; - default
+} */
+
+.em-size {
+  font-size: 1.5em;
+  /* 16 * 1.5 */
+}
+
+.em-size p {
+  font-size: 1.5em;
+  /* 36 = 16 * 1.5 * 1.5 */
+
+  margin-top: 2em;
+  /* 72 = 16 * 1.5 * 1.5 * 2 - based on current font-size */
+}
+
+.rem-size {
+  font-size: 1rem;
+  /* 16 * 1 */
+}
+
+.rem-size p {
+  font-size: 1.5rem;
+  /* 24 = 16  * 1.5 */
+
+  margin-top: 2rem;
+  /* 32 = 16 * 2 */
+}
+
+/*
+html
+{
+    font-size: 62.5% => 1rem = 10px, 1.5rem = 15px
+}
+*/
