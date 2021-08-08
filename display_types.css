@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  background: lightgray;
+  height: 5rem;
+}
+
+a {
+  background: lightblue;
+  height: 10rem;
+}
+
+a.display-block {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background: lightcoral;
+}
+
+a.display-inline-block {
+  display: inline-block;
+  background: lightgreen;
+
+  height: 5rem;
+  width: 5rem;
+  margin: 2rem;
+}
+
+img {
+  height: 10rem;
+  width: 10rem;
+}
