@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  background: cadetblue;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  position: relative;
+}
+
+.box0,
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 20%;
+  height: 20%;
+  background: red;
+}
+
+.box0 {
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box1 {
+  background: brown;
+  position: absolute; /* parent is relative */
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box2 {
+  background: blue;
+  position: relative;
+  left: 1rem;
+}
+
+.box3 {
+  background: darkolivegreen;
+  position: fixed; /* scroll to check */
+  left: 10rem;
+}
+
+.box4 {
+  background: fuchsia;
+  position: sticky; /* scroll to check */
+
+  left: 0; /*stick inside section*/
+  top: 1rem;
+
+  width: 5rem;
+  height: 40%;
+}
+
+.long {
+  height: 200%;
+}
