@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 3.6rem;
+}
+
+.full-height {
+  background: greenyellow;
+  height: 100vh;
+}
+
+.with-min-hight {
+  background: lightgray;
+  min-height: 30vh; /*will extend because inner 3 * h1 bigger then this*/
+}
+
+h1 {
+  height: 20vh;
+  font-size: 2.4rem;
+}
+
+.desktop {
+  font-size: 4.8rem;
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+  p {
+    font-size: calc(2rem + 2vw);
+  }
+}

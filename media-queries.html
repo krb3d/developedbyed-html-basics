@@ -2,11 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="media-queries.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="media-queries-tablet.css"
+      media="(max-width:1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="media-queries-mobile.css"
+      media="(max-width: 500px)"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="full-height">
+      <div class="with-min-hight">
+        <h1 class="desktop">Desktop</h1>
+        <h1 class="tablet">Tablet</h1>
+        <h1 class="mobile">Mobile</h1>
+      </div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, hic!
+        Veniam cum aperiam delectus dicta, est repellat laudantium magnam ipsum
+        necessitatibus rerum in, maxime laboriosam distinctio magni ipsa
+        accusamus labore.
+      </p>
+    </div>
+    <h1>Need to scroll to see this</h1>
+  </body>
 </html>
