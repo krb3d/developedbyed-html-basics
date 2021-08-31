@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-size: 2.6rem;
 }
@@ -64,6 +68,8 @@ nav {
 
   width: 90%;
   margin: auto;
+
+  flex-wrap: wrap;
 }
 
 nav ul {
@@ -77,6 +83,8 @@ nav ul {
 
 #logo {
   flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
 }
 
 #logo a {
@@ -100,4 +108,16 @@ nav ul {
 
 .hero h3 {
   padding: 5rem;
+}
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
 }
