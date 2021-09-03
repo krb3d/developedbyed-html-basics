@@ -50,6 +50,14 @@ button {
   padding: 2rem 6rem;
   font-size: 1.8rem;
   cursor: pointer;
+  transition: background 1s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
+  /* transition: all 0.1s ease-in-out 1s;*/
+}
+
+button:hover {
+  background: darkmagenta;
+  font-size: 2.6rem;
 }
 
 /* Nav section with hero */
@@ -122,6 +130,7 @@ nav ul {
   align-items: center;
   text-shadow: white 2px 2px 2px;
   position: relative; /* for the clouds */
+  overflow: hidden; /* hide clouds which move outside during animation */
 }
 
 .locations-head {
@@ -150,13 +159,25 @@ nav ul {
 }
 
 .moving-cloud-1 {
-  opacity: 0.75;
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
 }
 
 .moving-cloud-2 {
-  top: 20%;
+  top: 10%;
   z-index: -1;
   opacity: 0.5;
+  animation: cloudAnimation 7s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+  }
+  100% {
+    transform: translate(10%, -10%);
+  }
 }
 
 /* Media Query */
