@@ -8,6 +8,8 @@
 
 html {
   font-size: 62.5%;
+  scroll-padding-top: 10vh; /*We have 10vh header nav, so need to move scroll for #anchors*/
+  scroll-behavior: smooth;
 }
 
 body {
