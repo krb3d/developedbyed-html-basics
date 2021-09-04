@@ -225,8 +225,85 @@ nav ul {
 }
 
 .card-icon {
-  background: #2f8cfd;
+  background: darkslateblue;
   justify-content: center;
+  align-items: center;
+}
+
+#contacts {
+  min-height: 100vh;
+  background: linear-gradient(rgba(125, 0, 125, 0.5), transparent),
+    url("./img/contact-mountain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.5);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+footer {
+  color: wheat;
+  background: darkslateblue;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  list-style-type: none;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -254,5 +331,17 @@ nav ul {
   .locations-head h3 {
     background: rgba(125, 0, 125, 0.5);
     color: white;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-bottom: 3rem;
   }
 }
