@@ -62,6 +62,12 @@ button:hover {
   font-size: 2.6rem;
 }
 
+button:focus {
+  background: magenta;
+  outline-style: dashed;
+  outline-color: wheat;
+}
+
 /* Nav section with hero */
 .main-head {
   background: #131c27;
@@ -228,6 +234,7 @@ nav ul {
 .card h4,
 .card p {
   padding: 3rem;
+  line-height: 1.2;
 }
 
 .card-icon {
