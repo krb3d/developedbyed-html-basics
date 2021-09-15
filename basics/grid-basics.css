@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  border: 1rem solid grey;
+}
+
+.box {
+  padding: 2rem;
+  border: 1px dotted black;
+}
+
+.box1 {
+  background: pink;
+  grid-area: box1;
+}
+
+.box2 {
+  background: skyblue;
+  grid-area: box2;
+}
+
+.box3 {
+  background: yellow;
+  grid-area: box3;
+}
+
+.box4 {
+  background: yellowgreen;
+  grid-area: box4;
+}
+
+.box5 {
+  background: goldenrod;
+  grid-area: box5;
+}
+
+.box6 {
+  background: hotpink;
+  grid-area: box6;
+}
+
+.box7 {
+  background: silver;
+  grid-area: box7;
+}
+
+/* Parent */
+.container {
+  display: grid;
+
+  /*
+  grid-template-columns: 5rem 1fr 2fr;
+  grid-template-columns: repeat(2, 5rem) 5%;
+  grid-template-rows: 2rem;
+*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "box1 box2 box3"
+    "box4 box4 box3"
+    "box5 . box3"
+    ". box6 box7";
+}
