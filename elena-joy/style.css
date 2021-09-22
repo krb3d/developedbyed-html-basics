@@ -6,6 +6,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Ruhl";
+  src: url(./fonts/FrankRuhlLibre-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Ruhl Medium";
+  src: url(./fonts/FrankRuhlLibre-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Vibes";
+  src: url(./fonts/GreatVibes-Regular.ttf);
+}
+
 html {
   font-size: 62.5%;
   scroll-padding-top: 10vh; /*We have 10vh header nav, so need to move scroll for #anchors*/
@@ -23,6 +38,8 @@ html {
   --color-special: #906272;
   --color-background: #414141;
   --color-text-grey: #525252;
+
+  --color-anchor-grey: #555555;
 }
 
 h1 {
@@ -46,8 +63,18 @@ li,
 button,
 label,
 input,
+a,
 p {
   font-size: var(--size-text);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-anchor-grey);
 }
 
 .flex {
@@ -57,10 +84,90 @@ p {
   align-items: center;
 }
 
-ul {
-  list-style: none;
+body {
+  font-family: "Ruhl", sans-serif;
 }
 
-a {
-  text-decoration: none;
+h1 {
+  font-family: "Vibes", sans-serif;
+}
+
+/* Nav section */
+.main-head {
+  box-shadow: 0px 10px 10px rgba(50, 50, 0, 0.1);
+  /*
+    we need z & position because of linear-gradient on .hero-images overwrite shadow effect
+  */
+  z-index: 2;
+  position: relative;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+
+#logo {
+  flex: 1 1 20rem;
+}
+
+.nav-links {
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero {
+  min-height: 90vh;
+  /* to align text with header logo
+  width: 95%;
+  margin 0 0 0 auto;
+  */
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden; /* hide horisontal scroll because of .plant2 going off-right-screen */
+}
+
+.hero-introduction {
+  flex: 2 1 40rem;
+  text-align: center;
+}
+.hero-introduction p {
+  padding: 5rem 10rem;
+}
+.hero-introduction h2 {
+  padding: 3rem;
+}
+.hero-introduction a {
+  padding: 2rem 8rem;
+  border: 3px solid black;
+  margin-bottom: 4rem;
+}
+.hero-images {
+  flex: 1 1 40rem;
+  background: linear-gradient(#aad1d4, #dad8dd);
+  position: relative; /* for .plant - to be placed inside this section*/
+  z-index: 1;
+}
+
+.hero-elena {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.plant {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  z-index: -1;
+}
+
+.plant2 {
+  left: 40%;
 }
