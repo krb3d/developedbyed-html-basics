@@ -320,6 +320,10 @@ header {
   flex: 3 1 40rem;
 }
 
+.form-wrapper h2 {
+  margin: 5rem 0rem;
+}
+
 .form-wrapper label {
   display: block; /* force-move to the new line */
 }
@@ -348,6 +352,27 @@ header {
 
 .contact img {
   flex: 1 1 40rem;
+}
+
+/* Footer */
+footer {
+  background: var(--color-background);
+  color: var(--color-text-bright);
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+}
+
+footer h4 {
+  flex: 4 1 40rem;
+  font-size: calc(1.4rem + 1vw);
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Should be at the end, because rewrite existed styles */
@@ -437,5 +462,18 @@ header {
 
   .gallery-head {
     display: none;
+  }
+
+  .contact img {
+    display: none;
+  }
+
+  footer ul {
+    order: 1;
+  }
+
+  footer h4 {
+    order: 2;
+    text-align: center;
   }
 }
