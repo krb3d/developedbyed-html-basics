@@ -270,6 +270,20 @@ header {
   display: grid;
   min-height: 100vh;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.gallery-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: var(--color-background);
+  color: var(--color-text-bright);
+  opacity: 80%;
+
+  padding: 5rem 10rem;
 }
 
 .gallery img {
@@ -378,5 +392,9 @@ header {
 
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
+  .gallery-head {
+    display: none;
   }
 }
