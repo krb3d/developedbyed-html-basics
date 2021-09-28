@@ -477,3 +477,15 @@ footer ul {
     text-align: center;
   }
 }
+
+@media screen and (min-width: 1700px) {
+  html {
+    --size-header1: 3rem;
+    --size-header2: 4.5rem;
+    --size-header3: 3.5rem;
+    --size-header4: 2.5rem;
+
+    --size-text: 3rem;
+    --size-text-big: 6rem;
+  }
+}
