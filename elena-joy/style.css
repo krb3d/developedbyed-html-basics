@@ -33,7 +33,7 @@ html {
   --size-header4: calc(2.4rem + 1vw);
 
   --size-text: calc(1.5rem + 1vw);
-  --size-text-big: calc(2.4rem + 1vw);
+  --size-text-big: calc(2.8rem + 1vw);
 
   --color-special: #906272;
   --color-background: #414141;
@@ -307,6 +307,47 @@ header {
 
 .gallery4 {
   grid-column: 2/3;
+}
+
+/* Contact section */
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+
+.form-wrapper label {
+  display: block; /* force-move to the new line */
+}
+
+.form-wrapper input {
+  display: block; /* force-move to the new line */
+  margin: 3rem 0rem;
+  background-color: var(--color-background);
+  color: var(--color-text-bright);
+  border: none;
+  padding: 1rem;
+}
+
+.form-wrapper button {
+  padding: 1rem 8rem;
+  background-color: var(--color-special);
+  color: var(--color-text-bright);
+  width: 100%;
+  border: none;
+}
+
+.form-wrapper h2 > span {
+  font-size: calc(var(--size-header2) * 2);
+  color: var(--color-special);
+}
+
+.contact img {
+  flex: 1 1 40rem;
 }
 
 /* Should be at the end, because rewrite existed styles */
