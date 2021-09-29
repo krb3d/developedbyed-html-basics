@@ -17,17 +17,16 @@
     <header class="main-head">
       <nav>
         <h1 id="logo" id="logo"><a href="#top">Elena Joy</a></h1>
-        <input type="checkbox" class="menu-check-for-burger" />
+
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="burger-line1"></span>
+          <span class="burger-line2"></span>
+          <span class="burger-line3"></span>
         </div>
       </nav>
     </header>
@@ -55,7 +54,7 @@
           <img src="./img/plant2.png" alt="" class="plant plant2" />
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-image">
           <h5>MINIMAL</h5>
           <img src="./img/about-image.png" alt="portrait-picture" />
@@ -91,7 +90,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <header class="gallery-head">
           <h2>Quality Photography</h2>
           <p>My work pictures that I took</p>
@@ -109,7 +108,7 @@
           class="gallery4"
         />
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="form-wrapper flex">
           <h2>
             Get in<br />
@@ -150,5 +149,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>

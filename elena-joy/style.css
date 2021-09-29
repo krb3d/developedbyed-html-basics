@@ -23,7 +23,9 @@
 
 html {
   font-size: 62.5%;
-  scroll-padding-top: 10vh; /*We have 10vh header nav, so need to move scroll for #anchors*/
+  /*
+  scroll-padding-top: 10vh; /*We have 10vh header nav, so need to move scroll for #anchors
+  */
   scroll-behavior: smooth;
 
   /*vars for fluent grow*/
@@ -214,8 +216,7 @@ header {
   --menu-hiding-percent: 100%;
 }
 
-.burger,
-.menu-check-for-burger {
+.burger {
   display: none;
 }
 
@@ -408,16 +409,19 @@ footer ul {
     transition: transform 1s ease;
   }
 
+  /*
+  -- replaced by JS
+
   .menu-check-for-burger {
     display: block;
-    position: absolute; /* .main-head is relative, top 50% will relate to middle */
+    position: absolute; /* .main-head is relative, top 50% will relate to middle 
     top: 50%;
-    right: 5%; /* because nav is 90% and this is a half */
+    right: 5%; /* because nav is 90% and this is a half 
     transform: translate(10%, -50%);
     width: 5rem;
     height: 5rem;
     cursor: pointer;
-    opacity: 20%; /* 0 in prod */
+    opacity: 20%; /* 0 in prod 
     z-index: 100;
   }
 
@@ -435,6 +439,25 @@ footer ul {
   }
   .menu-check-for-burger:checked ~ .burger span:nth-child(3) {
     transform: rotatez(-45deg) translateY(-300%);
+  }
+  */
+
+  .nav-open {
+    transform: translate(calc(-1 * var(--menu-hiding-percent)));
+  }
+
+  .menu-toggle .burger-line1 {
+    transform: rotatez(45deg) translateY(300%);
+    background: lightblue;
+  }
+
+  .menu-toggle .burger-line2 {
+    opacity: 0;
+  }
+
+  .menu-toggle .burger-line3 {
+    transform: rotatez(-45deg) translateY(-300%);
+    background: yellowgreen;
   }
 
   /* non-burgers */
