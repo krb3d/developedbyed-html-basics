@@ -1,0 +1,10 @@
+footer {
+  min-height: 10vh;
+  background: $color-primary;
+  @include flex(row, center);
+
+  h4 {
+    font-size: 2rem;
+    color: white;
+  }
+}
