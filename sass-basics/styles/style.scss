@@ -1,0 +1,14 @@
+@import "./var";
+@import "./global";
+@import "./intro";
+@import "./footer";
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: $color-primary;
+}
+
+h2 {
+  font-size: $font-size-big;
+}
