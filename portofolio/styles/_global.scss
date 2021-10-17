@@ -8,29 +8,28 @@
 
 html {
   font-size: 62.5%;
-  /*
-      scroll-padding-top: 10vh; /*We have 10vh header nav, so need to move scroll for #anchors
-      */
-  scroll-behavior: smooth;
 
-  --size-header1: calc($size-header1 + 1vw); // another way to utilize scss var
+  scroll-behavior: smooth;
+  --size-header1: calc(
+    $size-header1 + 1vw
+  ); // another way to utilize scss var with dynamic size
 }
 
 h1 {
-  font-size: var(--size-header1);
+  font-size: $size-header1;
 }
 
 h2 {
-  font-size: var(--size-header2);
+  font-size: $size-header2;
 }
 
 h3 {
-  font-size: var(--size-header3);
+  font-size: $size-header3;
 }
 
 h4,
 h5 {
-  font-size: var(--size-header4);
+  font-size: $size-header4;
 }
 
 li,
@@ -39,7 +38,7 @@ label,
 input,
 a,
 p {
-  font-size: var(--size-text);
+  font-size: $size-text;
 }
 
 ul {
@@ -48,5 +47,5 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--color-anchor-grey);
+  color: $color-grey-text;
 }

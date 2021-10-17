@@ -5,7 +5,7 @@ $size-header4: 2rem;
 
 $size-text: 2.5rem;
 
-$gradient: linnear-gradient(left, #38d39f, #38a4d3);
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
 
 $color-backgroud: #154353;
 $color-grey-text: #2c2c2c;
@@ -18,3 +18,4 @@ $color-grey-text: #2c2c2c;
 }
 
 @import "global";
+@import "intro";
