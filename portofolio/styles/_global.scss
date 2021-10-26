@@ -15,6 +15,10 @@ html {
   ); // another way to utilize scss var with dynamic size
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 h1 {
   font-size: $size-header1;
 }
